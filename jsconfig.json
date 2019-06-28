@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "src": ["./src"],
+      "actions": ["./src/actions"],
+      "assets": ["./src/assets"],
+      "components": ["./src/components"],
+      "modules": ["./src/modules"],
+      "reducers": ["./src/reducers"],
+      "services": ["./src/services"],
+      "utils": ["./src/utils"],
+      "views": ["./src/views"],
+      "store": ["./src/store"],
+    }
+  }
+}
