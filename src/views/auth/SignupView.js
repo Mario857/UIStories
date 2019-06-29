@@ -10,7 +10,7 @@ const SignupView = ({ navigation }) => (
     alignItems: 'center',
   }}
   >
-    <Text> Example </Text>
+    <Text style={{ fontFamily: 'Mosk', fontWeight: 800 }}> Example </Text>
   </View>
 );
 
