@@ -12,8 +12,14 @@ import StandaloneIcon from './StandaloneIcon';
 
 const sizeVariantStyles = {
   [sizeVariants.big]: {
-    padding: scaleSize(14),
+    padding: scaleSize(12),
     height: scaleSize(48),
+    fontSize: scaleSize(14),
+    fontWeight: '500',
+  },
+  [sizeVariants.medium]: {
+    padding: scaleSize(6),
+    height: scaleSize(36),
     fontSize: scaleSize(14),
     fontWeight: '500',
   },
@@ -27,15 +33,18 @@ const sizeVariantStyles = {
 
 const variantStyles = {
   [styleVariants.primary]: {
-    color: colors.midOrange,
+    color: colors.midBlue,
   },
 
   [styleVariants.secondary]: {
-    color: colors.darkGray,
+    color: colors.lightGreen,
   },
 
   [styleVariants.facebook]: {
     color: colors.facebookBlue,
+  },
+  [styleVariants.transparent]: {
+    color: 'transparent',
   },
 };
 
@@ -53,6 +62,7 @@ const ButtonContainer = styled.View`
   padding: ${props => sizeVariantStyles[props.sizeVariant].padding}px;
 
   background-color: ${props => variantStyles[props.styleVariant].color};
+
 `;
 
 const ButtonText = styled.Text`
@@ -60,19 +70,20 @@ const ButtonText = styled.Text`
   font-size: ${props => sizeVariantStyles[props.sizeVariant].fontSize}px;
   font-weight: ${props => sizeVariantStyles[props.sizeVariant].fontWeight};
 
-  color: ${colors.white};
+  color: ${props => (props.styleVariant === styleVariants.transparent ? 'rgba(29,34,38,0.2)' : colors.white)};
 `;
 
 const Button = ({
-  disabled, Icon, onPress, text, styleVariant, sizeVariant, upperCased,
+  disabled, Icon, onPress, text, styleVariant, sizeVariant, upperCased, fullWidth,
 }) => (
-  <View style={{ height: sizeVariantStyles[sizeVariant].height }}>
+  <View style={{ height: sizeVariantStyles[sizeVariant].height, ...fullWidth ? { flex: 1 } : {} }}>
     <TouchableOpacity style={{ flex: 1 }} onPress={onPress} disabled={disabled} activeOpacity={0.5}>
       <ButtonContainer styleVariant={styleVariant} sizeVariant={sizeVariant} disabled={disabled}>
         {text && (
           <ButtonText
             numberOfLines={1}
             sizeVariant={sizeVariant}
+            styleVariant={styleVariant}
             ellipsizeMode={text.length < 2 ? 'clip' : 'tail'}
           >
             {upperCased ? text.toUpperCase() : text}
@@ -94,10 +105,12 @@ Button.propTypes = {
   styleVariant: PropTypes.oneOf(Object.values(styleVariants)),
   sizeVariant: PropTypes.oneOf(Object.values(sizeVariants)),
   upperCased: PropTypes.bool,
+  fullWidth: PropTypes.bool,
 };
 
 Button.defaultProps = {
   disabled: false,
+  fullWidth: false,
   Icon: undefined,
   text: undefined,
   styleVariant: 'primary',

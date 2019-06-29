@@ -3,6 +3,7 @@ const styleVariants = Object.freeze({
   secondary: 'secondary',
   facebook: 'facebook',
   title: 'title',
+  transparent: 'transparent',
 });
 
 export default styleVariants;
