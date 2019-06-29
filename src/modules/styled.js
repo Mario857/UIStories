@@ -1,30 +1,18 @@
 
 import styled from 'styled-components';
 import { PixelRatio } from 'react-native';
+import colors from './colors';
 
 const MainContainer = styled.View`
   flex: 1;
-  background-color: rgb(250,250,250);
+  background-color: ${colors.white};
   height: 100%;
-`;
-
-const BackgroundImage = styled.ImageBackground`
-  position: absolute;
-  width: 100%;
-  height: 62%;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-`;
-
-const MainOverlay = styled.View`
-  padding: 20px;
-  height: 100%;
+  padding: 24px;
 `;
 
 const MainSafeArea = styled.SafeAreaView`
   height: 100%;
+  background-color: ${colors.white};
 `;
 
 // TODO map common gaps to screen size
@@ -48,8 +36,6 @@ const FooterContent = styled(CenteredContent)`
 
 export {
   MainContainer,
-  BackgroundImage,
-  MainOverlay,
   MainSafeArea,
   FieldGap,
   FlexRow,

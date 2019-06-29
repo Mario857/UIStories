@@ -1,17 +1,32 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Dimensions } from 'react-native';
 import PropTypes from 'prop-types';
+import { MainSafeArea, MainContainer, FieldGap } from 'modules/styled';
+
+import { Card, CardRow } from 'src/components/Card';
+import TextField from 'src/components/TextField';
+
+const { height } = Dimensions.get('window');
+
 
 const SignupView = ({ navigation }) => (
-  <View style={{
-    flex: 1,
-    backgroundColor: 'green',
-    justifyContent: 'center',
-    alignItems: 'center',
-  }}
-  >
-    <Text style={{ fontFamily: 'Mosk', fontWeight: 800 }}> Example </Text>
-  </View>
+  <MainContainer>
+    <FieldGap gap={212} />
+    <Card style={{ flex: 1 }}>
+      <TextField />
+      <FieldGap gap={16} />
+      <TextField />
+      <FieldGap gap={16} />
+      <TextField />
+      <FieldGap gap={16} />
+      <TextField />
+      <FieldGap gap={16} />
+      <TextField />
+      <FieldGap gap={16} />
+
+    </Card>
+    <FieldGap gap={111} />
+  </MainContainer>
 );
 
 SignupView.propTypes = {

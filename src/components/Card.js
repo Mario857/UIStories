@@ -5,7 +5,10 @@ const Card = styled.View`
   background-color: ${colors.white};
   padding: ${props => (props.padding ? props.padding : 18)}px;
   border-radius: 8px;
-  box-shadow: 10px 5px 5px rgba(83, 149, 181, 0.1);
+  shadow-color: black;
+  shadow-opacity: 0.2;
+  shadow-offset: 0px 3px;
+  shadow-radius: 7.49;
 `;
 
 const CardRow = styled.View`

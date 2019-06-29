@@ -9,7 +9,7 @@ import sizeVariants from 'modules/sizeVariants';
 const sizeVariantStyles = {
   [sizeVariants.big]: {
     padding: scaleSize(14),
-    height: scaleSize(48),
+    height: scaleSize(44),
     fontSize: scaleSize(14),
     fontWeight: '300',
   },
