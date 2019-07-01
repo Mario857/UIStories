@@ -15,19 +15,19 @@ const sizeVariantStyles = {
     padding: scaleSize(12),
     height: scaleSize(48),
     fontSize: scaleSize(14),
-    fontWeight: '500',
+    fontWeight: '600',
   },
   [sizeVariants.medium]: {
     padding: scaleSize(6),
     height: scaleSize(36),
     fontSize: scaleSize(14),
-    fontWeight: '500',
+    fontWeight: '600',
   },
   [sizeVariants.small]: {
     padding: scaleSize(6),
     height: scaleSize(32),
     fontSize: scaleSize(14),
-    fontWeight: '500',
+    fontWeight: '600',
   },
 };
 
@@ -45,6 +45,9 @@ const variantStyles = {
   },
   [styleVariants.transparent]: {
     color: 'transparent',
+  },
+  [styleVariants.third]: {
+    color: colors.white,
   },
 };
 

@@ -16,6 +16,7 @@
     "react": "16.8.3",
     "react-native": "0.59.9",
     "react-native-gesture-handler": "^1.3.0",
+    "react-native-keyboard-aware-scroll-view": "^0.8.0",
     "react-native-svg": "^9.5.1",
     "react-navigation": "^3.11.0",
     "styled-components": "^4.3.2",
@@ -53,10 +54,12 @@
   },
   "jest": {
     "preset": "react-native",
-    "setupFilesAfterEnv": ["<rootDir>/jestSetup.js"],
+    "setupFilesAfterEnv": [
+      "<rootDir>/jestSetup.js"
+    ],
     "testEnvironment": "enzyme",
     "testEnvironmentOptions": {
-        "enzymeAdapter": "react16"
-    }  
+      "enzymeAdapter": "react16"
+    }
   }
 }
