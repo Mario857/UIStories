@@ -13,6 +13,7 @@ import Link from 'src/components/Link';
 import Button from 'src/components/Button';
 import withKeyboardInfo from 'src/utils/withKeyboardInfo';
 import AuthLayout from 'src/components/layout/AuthLayout';
+import TabNavigator from 'src/components/auth/TabNavigator';
 
 
 const TabNavContainer = styled.View`
@@ -25,27 +26,7 @@ const TabNavContainer = styled.View`
 const SignupView = ({ isKeyboardUp, navigation }) => (
   <AuthLayout isKeyboardUp={isKeyboardUp}>
     <Card style={{ zIndex: 999, flex: 1 }}>
-      {/* TODO Extract */}
-      <CenteredContent>
-        <TabNavContainer>
-          <Button
-            sizeVariant="big"
-            text="Login"
-            fullWidth
-            styleVariant="transparent"
-            upperCased={false}
-            onPress={() => navigation.navigate('Login')}
-          />
-          <Button
-            sizeVariant="big"
-            text="Signup"
-            fullWidth
-            styleVariant="secondary"
-            upperCased={false}
-            onPress={() => navigation.navigate('Signup')}
-          />
-        </TabNavContainer>
-      </CenteredContent>
+      <TabNavigator navigation={navigation} />
       <FieldGap gap={24} />
       <TextField placeholder="Username" />
       <FieldGap gap={16} />

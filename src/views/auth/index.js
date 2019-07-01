@@ -4,14 +4,14 @@ import LoginView from './LoginView';
 
 const AuthNavigator = createBottomTabNavigator(
   {
-    Signup: {
-      screen: SignupView,
+    Login: {
+      screen: LoginView,
       navigationOptions: {
         header: null,
       },
     },
-    Login: {
-      screen: LoginView,
+    Signup: {
+      screen: SignupView,
       navigationOptions: {
         header: null,
       },
