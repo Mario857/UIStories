@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import { View } from 'react-native';
 import PropTypes from 'prop-types';
 import {
@@ -14,14 +13,6 @@ import Button from 'src/components/Button';
 import withKeyboardInfo from 'src/utils/withKeyboardInfo';
 import AuthLayout from 'src/components/layout/AuthLayout';
 import TabNavigator from 'src/components/auth/TabNavigator';
-
-
-const TabNavContainer = styled.View`
-  background-color: rgba(185,185,185,0.2);
-  width: 150px;
-  flex-direction: row;
-  border-radius: 100;
-`;
 
 const SignupView = ({ isKeyboardUp, navigation }) => (
   <AuthLayout isKeyboardUp={isKeyboardUp}>

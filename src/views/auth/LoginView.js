@@ -1,9 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
 import { View } from 'react-native';
 import PropTypes from 'prop-types';
 import {
-  FieldGap, CenteredContent,
+  FieldGap,
+  CenteredContent,
 } from 'modules/styled';
 
 import { Card } from 'src/components/Card';
