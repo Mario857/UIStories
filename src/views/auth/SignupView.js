@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {
-  View, Dimensions, KeyboardAvoidingView, TouchableWithoutFeedback,
+  View, Dimensions,
 } from 'react-native';
 import PropTypes from 'prop-types';
 import {
