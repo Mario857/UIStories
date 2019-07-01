@@ -1,24 +1,18 @@
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 
-import { LoginView, SignupView } from 'views/auth';
+import AuthNavigator from 'views/auth';
 
 const AppNavigator = createStackNavigator(
   {
-    Signup: {
-      screen: SignupView,
-      navigationOptions: {
-        header: null,
-      },
-    },
-    Login: {
-      screen: LoginView,
+    Auth: {
+      screen: AuthNavigator,
       navigationOptions: {
         header: null,
       },
     },
   },
   {
-    initialRouteName: 'Signup',
+    initialRouteName: 'Auth',
   },
 );
 
