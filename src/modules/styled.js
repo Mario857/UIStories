@@ -4,7 +4,6 @@ import { PixelRatio } from 'react-native';
 import colors from './colors';
 
 const MainContainer = styled.View`
-  flex: 1;
   background-color: ${colors.white};
   height: 100%;
   padding: 24px;

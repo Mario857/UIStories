@@ -13,7 +13,7 @@ import breakpoints from 'src/modules/breakpoints';
 const { height: windowHeight } = Dimensions.get('window');
 
 const StyledBlueCircle = styled.ImageBackground`
-  position: absolute;
+  position: relative;
   width: 295px;
   height: 295px;
   left: 204px;
@@ -22,7 +22,7 @@ const StyledBlueCircle = styled.ImageBackground`
 `;
 
 const StyledYellowCircle = styled.ImageBackground`
-  position: absolute;
+  position: relative;
   top: 175px;
   width: 79px;
   height: 79px;
@@ -31,7 +31,7 @@ const StyledYellowCircle = styled.ImageBackground`
 `;
 
 const StyledGreenCircle = styled.ImageBackground`
-  position: absolute;
+  position: relative;
   bottom: -30px;
   width: 414px;
   height: 414px;
@@ -56,7 +56,7 @@ const BackgroundImageLayout = () => (
 
 
 const AuthLayout = ({ isKeyboardUp, children }) => (
-  <KeyboardAwareScrollView style={{ flex: 1 }}>
+  <KeyboardAwareScrollView style={{ height: '100%' }}>
     <MainContainer>
       <BackgroundImageLayout />
       <FieldGap gap={windowHeight >= breakpoints.lg ? 200 : 20} />
