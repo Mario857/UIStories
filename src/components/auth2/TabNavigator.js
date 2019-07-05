@@ -35,11 +35,13 @@ const StyledButtonText = styled.Text`
 
 const ColoredUnderlineContainer = styled.View`
   flex-direction: row;
-  height: 8px;
+  height: 6px;
 `;
 
 const ColoredUnderline = styled.View`
   background-color: ${props => props.color};
+  border-right-color: ${colors.white};
+  border-right-width: 0.2px;
   flex: 1;
 `;
 
@@ -64,7 +66,7 @@ const TabButton = ({
       </StyledTabButton>
       {isActive && (
       <ColoredUnderlineContainer>
-        {underlineColors.map(color => <ColoredUnderline color={color} />)}
+        {underlineColors.map(color => <ColoredUnderline key={color} color={color} />)}
       </ColoredUnderlineContainer>
       )}
     </TouchableOpacity>
