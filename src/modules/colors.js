@@ -5,7 +5,7 @@ const colors = {
   darkPink: 'rgb(236,0,139)',
   purple: 'rgb(145,38,143)',
   darkBlue: 'rgb(46,125,192)',
-  aquaMarine: 'rgb(58,204,255)',
+  aquaMarine: 'rgb(58,204,225)',
   facebookBlue: 'rgb(59,89,152)',
   midBlue: 'rgb(74,105,255)',
   slate: 'rgb(60,79,99)',

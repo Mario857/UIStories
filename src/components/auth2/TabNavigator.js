@@ -12,6 +12,11 @@ const TabNavContainer = styled.View`
   border-width: 1.2px;
   height: ${scaleSize(44)};
   flex-direction: row;
+  
+  shadow-color: rgb(69,91,99);
+  shadow-opacity: 0.2;
+  shadow-offset: 0px 5px;
+  shadow-radius: 2;
 `;
 
 const StyledTabButton = styled.View`

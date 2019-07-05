@@ -13,27 +13,27 @@ import StandaloneIcon from 'components/shared/StandaloneIcon';
 const sizeVariantStyles = {
   [sizeVariants.big]: {
     padding: scaleSize(12),
-    height: scaleSize(48),
+    height: scaleSize(52),
     fontSize: scaleSize(14),
-    fontWeight: '600',
+    fontWeight: '500',
   },
   [sizeVariants.medium]: {
     padding: scaleSize(6),
     height: scaleSize(36),
     fontSize: scaleSize(14),
-    fontWeight: '600',
+    fontWeight: '500',
   },
   [sizeVariants.small]: {
     padding: scaleSize(6),
     height: scaleSize(32),
     fontSize: scaleSize(14),
-    fontWeight: '600',
+    fontWeight: '500',
   },
 };
 
 const variantStyles = {
   [styleVariants.primary]: {
-    color: colors.midBlue,
+    color: colors.aquaMarine,
   },
 
   [styleVariants.secondary]: {
@@ -57,7 +57,7 @@ const ButtonContainer = styled.View`
   align-items: center;
   justify-content: center;
 
-  border-radius: 100;
+  border-radius: 12px;
   margin: 0;
   overflow: hidden;
 
@@ -69,7 +69,7 @@ const ButtonContainer = styled.View`
 `;
 
 const ButtonText = styled.Text`
-  font-family: 'Mosk';
+  font-family: 'Gibson';
   font-size: ${props => sizeVariantStyles[props.sizeVariant].fontSize}px;
   font-weight: ${props => sizeVariantStyles[props.sizeVariant].fontWeight};
 
