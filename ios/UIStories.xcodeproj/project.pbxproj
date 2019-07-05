@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -54,6 +53,10 @@
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
 		FDF71A5DBDDF4E8CA6CCD2FD /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DFC574D20D947F989BE1B04 /* libRNGestureHandler.a */; };
+		C85AD5EED64847738E586F2F /* Gibson-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 514FBB141A99458C9EA3885E /* Gibson-bold.ttf */; };
+		4B28478B3F2F43138D3E6990 /* Gibson-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2BBC3AACAB49FDB7084DE7 /* Gibson-BoldItalic.ttf */; };
+		FEF01C8EAA0B4BEC97CD3B7F /* Gibson-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02DE30C52A8B4EE487CC524F /* Gibson-Regular.ttf */; };
+		6923475F8F1D4E7A81964C4D /* Gibson-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 475098CEC363462A874E00D3 /* Gibson-RegularItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -413,6 +416,10 @@
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		EEA81D7FB67E49F7B8DEA94B /* Mosk-Ultra-Bold-900.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Mosk-Ultra-Bold-900.ttf"; path = "../src/assets/fonts/Mosk/Mosk-Ultra-Bold-900.ttf"; sourceTree = "<group>"; };
 		F7F903FE3A0543D782B365DA /* RNGestureHandler.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNGestureHandler.xcodeproj; path = "../node_modules/react-native-gesture-handler/ios/RNGestureHandler.xcodeproj"; sourceTree = "<group>"; };
+		514FBB141A99458C9EA3885E /* Gibson-bold.ttf */ = {isa = PBXFileReference; name = "Gibson-bold.ttf"; path = "../src/assets/fonts/Gibson/Gibson-bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AD2BBC3AACAB49FDB7084DE7 /* Gibson-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Gibson-BoldItalic.ttf"; path = "../src/assets/fonts/Gibson/Gibson-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		02DE30C52A8B4EE487CC524F /* Gibson-Regular.ttf */ = {isa = PBXFileReference; name = "Gibson-Regular.ttf"; path = "../src/assets/fonts/Gibson/Gibson-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		475098CEC363462A874E00D3 /* Gibson-RegularItalic.ttf */ = {isa = PBXFileReference; name = "Gibson-RegularItalic.ttf"; path = "../src/assets/fonts/Gibson/Gibson-RegularItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -737,6 +744,10 @@
 				07264DED12CA4089A3968D93 /* Mosk-Semi-Bold-600.ttf */,
 				763EBE60E3B645BEA82C2B28 /* Mosk-Thin-100.ttf */,
 				EEA81D7FB67E49F7B8DEA94B /* Mosk-Ultra-Bold-900.ttf */,
+				514FBB141A99458C9EA3885E /* Gibson-bold.ttf */,
+				AD2BBC3AACAB49FDB7084DE7 /* Gibson-BoldItalic.ttf */,
+				02DE30C52A8B4EE487CC524F /* Gibson-Regular.ttf */,
+				475098CEC363462A874E00D3 /* Gibson-RegularItalic.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1243,6 +1254,10 @@
 				AB720E7B26F248AC919C0CAB /* Mosk-Semi-Bold-600.ttf in Resources */,
 				AE878B8993A54D70AE57F49D /* Mosk-Thin-100.ttf in Resources */,
 				DFB4FFBD2EC6428D8C63AE0C /* Mosk-Ultra-Bold-900.ttf in Resources */,
+				C85AD5EED64847738E586F2F /* Gibson-bold.ttf in Resources */,
+				4B28478B3F2F43138D3E6990 /* Gibson-BoldItalic.ttf in Resources */,
+				FEF01C8EAA0B4BEC97CD3B7F /* Gibson-Regular.ttf in Resources */,
+				6923475F8F1D4E7A81964C4D /* Gibson-RegularItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

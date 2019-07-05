@@ -64,6 +64,10 @@
 		<string>Mosk-Semi-Bold-600.ttf</string>
 		<string>Mosk-Thin-100.ttf</string>
 		<string>Mosk-Ultra-Bold-900.ttf</string>
+		<string>Gibson-bold.ttf</string>
+		<string>Gibson-BoldItalic.ttf</string>
+		<string>Gibson-Regular.ttf</string>
+		<string>Gibson-RegularItalic.ttf</string>
 	</array>
 </dict>
 </plist>
