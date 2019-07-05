@@ -23,7 +23,7 @@ const StyledTabButton = styled.View`
   flex: 1;
   border-right-color: rgb(244,244,246);
   border-right-width: 1px;
-  padding-top: 13px;
+  padding-top: ${scaleSize(12)}px;
   align-items: center;
 `;
 
@@ -31,12 +31,13 @@ const StyledButtonText = styled.Text`
   font-family: 'Gibson';
   font-weight: 400;
   text-transform: uppercase;
+  font-size: ${scaleSize(14)}px;
   color: ${props => (props.isActive ? colors.slate : 'rgb(149,157,173)')};
 `;
 
 const ColoredUnderlineContainer = styled.View`
   flex-direction: row;
-  height: 6px;
+  height: ${scaleSize(6)}px;
 `;
 
 const ColoredUnderline = styled.View`
