@@ -8,14 +8,11 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const TabNavContainer = styled.View`
   background-color: ${colors.white};
-  border-top-color: rgb(244,244,246);
-  border-top-width: 1px;
+  border-color: rgb(244,244,246);
+
+  border-width: 1.2px;
   height: ${scaleSize(44)};
   flex-direction: row;
-  shadow-color: black;
-  shadow-opacity: 0.1;
-  shadow-offset: 0px 2px;
-  shadow-radius: 7.49;
 `;
 
 const StyledTabButton = styled.View`
@@ -41,19 +38,19 @@ const ColoredUnderlineContainer = styled.View`
 const ColoredUnderline = styled.View`
   background-color: ${props => props.color};
   border-right-color: ${colors.white};
-  border-right-width: 0.2px;
+  border-right-width: 0.1px;
   flex: 1;
 `;
 
 const TabButton = ({
   isActive,
-  onClick,
+  onPress,
   text,
   underlineColors,
 }) => (
   <View style={{ flex: 1 }}>
     <TouchableOpacity
-      onClick={onClick}
+      onPress={onPress}
       disabled={isActive}
       style={{ height: '100%' }}
     >
@@ -75,7 +72,7 @@ const TabButton = ({
 
 TabButton.propTypes = {
   isActive: PropTypes.bool.isRequired,
-  onClick: PropTypes.func.isRequired,
+  onPress: PropTypes.func.isRequired,
   text: PropTypes.string.isRequired,
   underlineColors: PropTypes.arrayOf(PropTypes.string),
 };
@@ -99,7 +96,7 @@ const TabNavigator = ({ navigation }) => {
       {decoratedRoutes.map(route => (
         <TabButton
           isActive={route.isActive}
-          onClick={() => navigation.navigate(route.routeName)}
+          onPress={() => navigation.navigate(route.key)}
           text={route.routeName}
           key={route.key}
         />

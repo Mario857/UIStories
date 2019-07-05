@@ -4,7 +4,7 @@ import LoginView from './LoginView';
 
 const AuthNavigator = createBottomTabNavigator(
   {
-    Login: {
+    Signin: {
       screen: LoginView,
       navigationOptions: {
         header: null,
@@ -18,7 +18,7 @@ const AuthNavigator = createBottomTabNavigator(
     },
   },
   {
-    initialRouteName: 'Login',
+    initialRouteName: 'Signin',
     // Render null custom header will be used
     tabBarComponent: () => null,
   },
