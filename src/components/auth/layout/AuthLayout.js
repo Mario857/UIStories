@@ -5,9 +5,9 @@ import PropTypes from 'prop-types';
 import { View, Dimensions } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import { MainContainer, FieldGap } from 'src/modules/styled';
-import BlueCircle from 'src/assets/images/blue-circle.png';
-import GreenCircle from 'src/assets/images/green-circle.png';
-import YellowCircle from 'src/assets/images/yellow-circle.png';
+import BlueCircle from 'src/assets/images/auth/blue-circle.png';
+import GreenCircle from 'src/assets/images/auth/green-circle.png';
+import YellowCircle from 'src/assets/images/auth/yellow-circle.png';
 import breakpoints from 'src/modules/breakpoints';
 
 const { height: windowHeight } = Dimensions.get('window');
