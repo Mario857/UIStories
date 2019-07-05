@@ -6,13 +6,13 @@ import {
   CenteredContent,
 } from 'modules/styled';
 
-import { Card } from 'src/components/Card';
-import TextField from 'src/components/TextField';
-import Label from 'src/components/Label';
-import Link from 'src/components/Link';
-import Button from 'src/components/Button';
+import { Card } from 'src/components/auth/Card';
+import TextField from 'src/components/auth/TextField';
+import Label from 'src/components/auth/Label';
+import Link from 'src/components/auth/Link';
+import Button from 'src/components/auth/Button';
 import withKeyboardInfo from 'src/utils/withKeyboardInfo';
-import AuthLayout from 'src/components/layout/AuthLayout';
+import AuthLayout from 'src/components/auth/layout/AuthLayout';
 import TabNavigator from 'src/components/auth/TabNavigator';
 
 const LoginView = ({ isKeyboardUp, navigation }) => (

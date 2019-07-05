@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { CenteredContent } from 'src/modules/styled';
-import Button from 'src/components/Button';
+import Button from 'src/components/auth/Button';
 
 const TabNavContainer = styled.View`
   background-color: rgba(185,185,185,0.2);
