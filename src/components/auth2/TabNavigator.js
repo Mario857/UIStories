@@ -9,7 +9,6 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 const TabNavContainer = styled.View`
   background-color: ${colors.white};
   border-color: rgb(244,244,246);
-
   border-width: 1.2px;
   height: ${scaleSize(44)};
   flex-direction: row;
