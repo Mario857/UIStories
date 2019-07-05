@@ -16,7 +16,7 @@ So far we have.
 <img src="https://github.com/Mario857/UIStories/blob/master/screenshots/CardLayout2.png" alt="Card Layout 2" width="300"/>
 
 <h2> Shadow Layout Login/Signup </h2>
-<div> Iphone 5S </div>
+<div> Login </div>
 <img src="https://github.com/Mario857/UIStories/blob/master/screenshots/ShadowLayout1.png" alt="Card Layout 1" width="300"/>
-<div> Iphone XS </div>
+<div> Sign up </div>
 <img src="https://github.com/Mario857/UIStories/blob/master/screenshots/ShadowLayout2.png" alt="Card Layout 2" width="300"/>
