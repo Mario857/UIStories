@@ -6,7 +6,7 @@ import TabNavigator from 'src/components/auth2/TabNavigator';
 import { FieldGap, MainContainer, CenteredContent } from 'src/modules/styled';
 import TextField from 'src/components/auth2/TextField';
 import Button from 'src/components/auth/Button';
-import Label from 'src/components/auth/Label';
+import Label from 'src/components/auth2/Label';
 
 const Header = styled.View`
   width: 100%;
