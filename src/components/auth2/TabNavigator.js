@@ -37,7 +37,7 @@ const StyledButtonText = styled.Text`
 
 const ColoredUnderlineContainer = styled.View`
   flex-direction: row;
-  height: ${scaleSize(6)}px;
+  height: ${scaleSize(5)}px;
 `;
 
 const ColoredUnderline = styled.View`
