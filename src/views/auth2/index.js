@@ -18,7 +18,7 @@ const AuthNavigator = createBottomTabNavigator(
     },
   },
   {
-    initialRouteName: 'Signup',
+    initialRouteName: 'Login',
     // Render null custom header will be used
     tabBarComponent: () => null,
   },
