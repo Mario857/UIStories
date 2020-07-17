@@ -10,7 +10,7 @@
     "@react-native-community/async-storage": "^1.5.0",
     "buffer": "^5.2.1",
     "formik": "^1.5.7",
-    "lodash": "^4.17.14",
+    "lodash": "^4.17.19",
     "p-map": "^2.1.0",
     "prop-types": "^15.7.2",
     "react": "16.8.3",
